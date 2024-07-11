@@ -17,3 +17,4 @@ cucumber-report
 
 .nx
 /update.sh
+**/unit-test-results/test-report.html

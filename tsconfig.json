@@ -10,5 +10,8 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "exclude": [
+    "src/**/*.test.ts"
+  ]
 }
