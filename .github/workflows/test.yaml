@@ -18,9 +18,9 @@ jobs:
       - uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: all-tests-restuls-artifacts
+          name: all-tests-results-artifacts
           path: |
-            playwright-report/
             test-results/
             unit-test-results/
+            cucumber-report/
           retention-days: 10
