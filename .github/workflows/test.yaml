@@ -13,14 +13,13 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npx playwright install --with-deps
-      - run: npm run test
-      - run: npm jest-unit-test
+      - run: npm test
+      - run: npm run jest-unit-test
       - uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: testrun-artifacts
+          name: playwright-artifacts
           path: |
             playwright-report/
             test-results/
-            unit-test-results/
           retention-days: 10
